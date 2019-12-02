@@ -1,0 +1,124 @@
+
+body {
+	padding:0px;
+	margin:0px;
+	background-color: rgba(0,0,0,0.00)
+}
+
+/* 顶部<div>样式 */
+.topMenu {
+	z-index:5;		/* 堆叠顺序/// 该语句学习自： https://www.cnblogs.com/xiaohuochai/p/5304619.html/*/
+	
+	width:100%;    
+	height:50px;    
+	background-color:#0A66F4;	/* 背景色*/
+}
+/* 底部<div>样式 */
+.mainContent {
+	position:absolute;	
+	bottom:0px;			
+	overflow:hidden;	/* 隐藏溢出部分*/
+	z-index:-1;			/* 堆叠顺序最底层 //// 该语句学习自： https://www.cnblogs.com/xiaohuochai/p/5304619.html */
+	
+	width:100%;			
+	height:-webkit-calc(100% - 50px);
+	height:-moz-calc(100% - 50px);
+	height:calc(100% - 50px);
+	background-image: url("../Image/12321.png");background-repeat: no-repeat;background-position: center;background-size: cove;	
+}
+/* 可以进行二级调用的语句支持 */
+iframe {
+	width:100%;
+	height:100%;
+	border:none;	
+}
+
+
+.topMenu ul{	
+	margin:0px;		
+	padding:0px;
+	list-style-type:none;  /* 去除无序列表的标识符（协会活动讲解） */
+}
+
+
+
+li {
+	float:left;	/* 设置左浮动，让它列表项的方向变成水平方向（ float由协会活动讲解） */
+	
+	background-color:#0A66F4;	
+
+	text-align:center;	
+	width:150px;	
+	
+	border-right:solid 2px #FFFFFF; 
+}
+
+
+
+a {
+	display:block;			
+
+	line-height:50px; 		
+	color:#FFFFFF;			
+	text-decoration:none;	
+}
+
+/* 隐藏二级菜单 */
+ul.dropdown-content {
+	display:none;
+}
+
+/* 显示二级菜单 */
+li.dropdown:hover ul {
+	display:list-item;	/* 转换为列表元素，让其恢复显示 */
+}
+
+div.topMenu li:hover {
+	background-color:#E4E4E4;
+}
+
+li:hover>a{
+	color:#000000;
+}
+ul.dropdown-content li {
+	border-right:transparent;	/* 去除一级菜单边框 */
+	width:200px;		
+	
+	text-align:left;	
+	padding-left:20px;	/*预留美化边框*/
+}
+
+/* 美化顶框 */
+.dropdown li:first-of-type {
+	border-top:solid 2px blue;
+}
+
+
+li#second {
+	float:right;	/* 将"加载二级导航页"这个列表项放置在最右 */
+	border-right:transparent;	
+	border-left:solid 2px #FFFFFF; /* 设置左侧边框 */
+	width:100px;	
+	background-color:#F09D04;	
+	
+}
+
+/* 参考菜鸟教程css */
+div.topMenu li#baiDu:hover {
+	background-color:#E30000;
+}
+
+
+li#baiDu:hover a {
+	/* 触发时变色 */
+	color:#FFFFFF;	
+}
+/*#header{width: 100%;height: 220px;background: #B6F952;z-index:1 }
+#header1{width: 100%;height: 50px;float: inherit;background:#B6F952;}
+#header2{width: 100%;height:40px;float: inherit;background:#B6F952 }
+#header3{width: 100%;height:70px;float: inherit;background:#B6F952 }
+#main{width: 100%;height: 400px;background:#C120C6;}
+#left{width:30%;height: 100%;float: left;background: #0AE3F0;}
+#center{width: 40%;height: 100%;float: left;background: #2C9CBA;}
+#right{width: 30%;height: 100%;float: left;background: #D1C71D;}
+#footer{width: 100%;height: 150px;background: #75B611;} */

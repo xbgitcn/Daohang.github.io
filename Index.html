@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="JS/beiwang.js"></script>
+<script type="text/javascript" src="JS/time.js"></script>
+<meta charset="utf-8">
+<link rel="stylesheet" href="CSS/default.css" type="text/css">
+<title>常用网址导航栏 by：天宝</title>
+</head>
+
+<body>
+
+<!--	<input type="button" value="当前时间" onclick="getTime()">-->
+<div id="header" class="">
+	<div id="header1" class=""> <img src="Image/导航1.png" width="12%"><!-- <h4><center>常用网址导航栏</center></h4> --></div>
+	<h3><center>常用网址导航栏</center></h3>
+	<div id="heafer2" class="">
+<center>
+<form action="http://www.baidu.com/baidu" target="_blank">
+                    <input type='text' name='word' size='30'>
+                    <input type="submit" value="百度搜索">
+</form>
+<form action="https://www.sogou.com/web" target="_blank">
+                    <input type='text' name='query' size='30'>
+                    <input type="submit" value="搜狗搜索">
+</form>
+</center>
+
+		</div>
+<div id="heafer3" class=""></div>
+	</div>
+<div id="main" class="">
+	<div id="left" class="">
+	<ul>
+		<li></li>
+		
+			<li><center><h2>常用</h2></center></li>
+		<li></li>
+		<li></li>
+		<a href="https://www.taobao.com/"><img src="Image/png/icon_43.png" height="70px" width="70px"></a>
+		<a href="https://weibo.com/"><img src="Image/png/icon_44.png" height="70px" width="70px"></a>
+		<a href="https://www.qq.com/"><img src="Image/png/icon_07.png" height="70px" width="70px"></a>
+		<a href="https://www.baidu.com/"><img src="Image/png/icon_11.png" height="70px" width="70px"></a>
+		<a href="https://www.youku.com/"><img src="Image/png/icon_47.png" height="70px" width="70px"></a>
+		<a href="http://browse.renren.com/index.jsp"><img src="Image/png/icon_25.png" height="70px" width="70px"></a>
+		<a href="https://www.douban.com/"><img src="Image/png/icon_46-46.png" height="70px" width="70px"></a>
+		<a href="http://www.sohu.com/"><img src="Image/png/icon_09.png" height="70px" width="70px"></a>
+		<a href="https://www.sina.com.cn/"><img src="Image/png/icon_03.png" height="70px" width="70px"></a>
+		<a href="http://www.dangdang.com/"><img src="Image/png/icon_31.png" height="70px" width="70px"></a>
+		<a href="http://www.soso.com/"><img src="Image/png/icon_15.png" height="70px" width="70px"></a>
+		<a href="http://t.qq.com/"><img src="Image/png/icon_45.png" height="70px" width="70px"></a>
+<!--
+		<img src="Image/png/icon_46.png" height="60px" width="60px"><a href=""></a>
+		<img src="Image/png/icon_43.png" height="60px" width="60px"><a href=""></a>
+-->
+			
+		</ul>
+	</div>
+	<div id="center" class="">
+		<center>
+				
+				<div id="post">
+				<div style="background:#3EADC5 ;height:30px;">
+                      备忘时间：<input type="submit" id="shangtian" name="Submit3" style="border:none; background-color:#3EADC5; color:white;" value="默认(点击改变)" onclick="prom()" />
+                      <input type="text" id="ritian" style="border:none; background-color:#3EADC5; color:white;"   onclick="prom()"/>
+                  </div>
+					<div>
+                  <textarea class="transition"></textarea>
+                      </div>
+                  <input id="postBt" type="button" style="border:none; background-color:#3EADC5; color:white;border-radius:5px; width:80px; height:30px;" value="建立备忘"/>
+                 <input id="clearBt" type="button" style="border:none; background-color:#3EADC5; color:white;border-radius:5px; width:80px; height:30px;" value="清空"/>
+             
+             <div id="comment"></div>
+					</div>
+					</center>
+	</div>
+	
+	<div id="right" class="">
+		<br>
+		<center><center><h2>多媒体嵌入</h2></center><br>
+		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="http://music.163.com/outchain/player?type=2&id=131149&auto=0&height=66"></iframe><br>
+<!--		<video src="vedio/11.mp4" width="350px" autoplay>   </video>-->
+			
+			<div style="text-align:center">
+
+<video id="video1" width="350px">
+<source src="vedio/11.mp4" type="video/mp4">
+</video><br />
+<button onclick="playPause()">播放/暂停</button>
+</div>
+<script type="text/javascript">
+var myVideo = document.getElementById("video1");
+function playPause()
+{
+if(myVideo.paused)
+myVideo.play();
+else
+myVideo.pause();
+//myVideo.stop();
+}
+
+</script>
+		</center>
+		
+    
+	</div>
+	</div>
+<div id="footer" class="">
+<marquee><style hidden=""></style>
+	<img src="Image/sas (1).jpeg" width="70px" height="70px">
+	<img src="Image/sas (2).jpeg" width="70px" height="70px">
+	<img src="Image/sas (3).jpeg" width="70px" height="70px">
+	<img src="Image/sas (3).jpg" width="70px" height="70px">
+	<img src="Image/sas (4).jpg" width="70px" height="70px">
+	<img src="Image/sas (5).jpeg" width="70px" height="70px">
+	<img src="Image/sas (5).jpg" width="70px" height="70px">
+	<img src="Image/sas (6).jpg" width="70px" height="70px">
+	<img src="Image/sas (7).jpg" width="70px" height="70px">
+	<img src="Image/sas (7).jpeg" width="70px" height="70px">
+	<img src="Image/sas (8).jpg" width="70px" height="70px">
+</marquee>
+
+	<center></center>
+	<center><font color="#85FF5F"> 本网站仅用于本地使用<br>
+		不得以任何其他未授权形式转发</font>
+	</center>
+</div>
+</body>
+</html>
